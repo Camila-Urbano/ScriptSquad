@@ -1,0 +1,164 @@
+.post_header
+{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+
+
+    .regresar
+    {
+        width: 100%;
+        padding: 15px 0px;
+        text-align: right;
+    }
+
+    .regresar a
+    {
+        font-size: 18px;
+        color: #26787e;
+        text-decoration: none;
+        transition: .3s ease;
+    }
+
+    .regresar a:hover
+    {
+        color: #34b0b9;
+    }
+
+    .header_img
+    {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .header_titulo
+    {
+        font-size: 30px;
+        padding: 20px;
+        color: #26787e;
+        text-align: center;
+    }
+}
+
+.post_body
+{
+    padding: 80px;
+    text-align: justify;
+}
+
+.compartir
+{
+    display: grid;
+    place-items: center;
+    padding-top: 150px ;
+
+    .iconos
+    {
+        width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .iconos i
+    {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding: 5px;
+        margin-top: 8px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        color: #26787e;
+        border: #26787e 2px solid;
+        transition: all .3s ease;
+    }
+
+    .iconos i:hover
+    {
+        color: #fff;
+        background-color: #26787e;
+    }
+}
+
+/************************************************** RESPONSIVE **************************************************/
+@media(max-width: 900px)
+{
+    .post_header .header_img
+    {
+        height: 300px;
+    }
+
+    .post_header .regresar
+    {
+        padding: 10px;
+    }
+
+    .post_header .header_titulo
+    {
+        font-size: 20px;
+    }
+
+    .post_body h3
+    {
+        font-size: 14px;
+    }
+
+    .post_body p
+    {
+        font-size: 12px;
+    }
+    
+}
+
+@media(max-width: 643px)
+{
+    .post_header
+    {
+        padding: 0;
+    }
+
+    .post_header .regresar a
+    {
+        font-size: 14px;
+    }
+
+    .post_header .header_img
+    {
+        height: 200px;
+    }
+
+    .post_header .header_titulo
+    {
+        font-size: 18px;
+    }
+
+    .post_body 
+    {
+        padding: 10px;
+    }
+    
+}
+
+@media(max-width: 300px)
+{
+    .post_header .header_titulo
+    {
+        font-size: 16px;
+    }
+
+    .post_body h3
+    {
+        font-size: 12px;
+    }
+
+    .post_body p
+    {
+        font-size: 10px;
+    }
+
+}
